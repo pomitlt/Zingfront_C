@@ -29,6 +29,7 @@
 	</form>
 </script>
         <script>
+		var apiUrl = "https://www.pomit.cn";
         function clearMarker(){
         	$("#planDiv").html("");
         }
@@ -37,7 +38,7 @@
         	var content = $("#id_content").val();
         	$.ajax({
         		type : "post",
-        		url : "/travel/add",
+        		url : apiUrl + "/zingfront/travel/add",
         		contentType: 'application/json',
         		data: 
         			JSON.stringify({
@@ -60,7 +61,7 @@
         function getPlans(){
         	$.ajax({
         		type : "get",
-        		url : "/travel/getAll",
+        		url : apiUrl + "/zingfront/travel/getAll",
         		data: {
         		  
         		},

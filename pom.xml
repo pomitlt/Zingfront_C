@@ -8,8 +8,8 @@
 		<artifactId>Feiyun</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>util-center</artifactId>
-	<name>util-center</name>
+	<artifactId>zingfront</artifactId>
+	<name>zingfront</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -42,6 +42,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>  
+                    <mainClass>cn.pomit.lt.zingfront.three.App</mainClass>  
+                </configuration>
 			</plugin>
 		</plugins>
 	</build>
